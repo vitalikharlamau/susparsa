@@ -12,7 +12,7 @@
         <div class="header__top">
             <div class="header__container container">
                 <nav class="header-navigation">
-                    <ul class="header-navigation__list">
+                    <ul class="header-navigation__list" role="list">
                         <li class="header-navigation__item">
                             <a class="header-navigation__link link link--xl" href="/women">Women</a>
                         </li>
@@ -30,7 +30,7 @@
                         <span class="visually-hidden">Homepage</span>
                         <img class="header-navigation__image" src="./media/logo.svg" alt="Susparsa logo">
                     </a>
-                    <ul class="header-navigation__list">
+                    <ul class="header-navigation__list" role="list">
                         <li class="header-navigation__item">
                             <a class="header-navigation__link link link--xl" href="/account">Account</a>
                         </li>
@@ -47,7 +47,7 @@
         <div class="header__bottom">
             <div class="header__container container">
                 <nav class="header-breadcrumbs">
-                    <ol class="header-breadcrumbs__list">
+                    <ol class="header-breadcrumbs__list" role="list">
                         <li class="header-breadcrumbs__item">
                             <a class="header-breadcrumbs__page link link--sm" href="/home">Home</a>
                         </li>
@@ -74,37 +74,37 @@
                         <legend class="fieldset__title">Size</legend>
                         <div class="fieldset__group">
                             <div class="radio">
-                                <input class="radio__input" type="radio" id="xs" value="xs" name="size">
+                                <input class="radio__input visually-hidden" type="radio" id="xs" value="xs" name="size">
                                 <label class="radio__label radio__label--size" for="xs">
                                     <abbr class="radio__size" title="Extra small size">XS</abbr>
                                 </label>
                             </div>
                             <div class="radio">
-                                <input class="radio__input" type="radio" id="s" value="s" name="size" checked>
+                                <input class="radio__input visually-hidden" type="radio" id="s" value="s" name="size" checked>
                                 <label class="radio__label radio__label--size" for="s">
                                     <abbr class="radio__size" title="Small size">S</abbr>
                                 </label>
                             </div>
                             <div class="radio">
-                                <input class="radio__input" type="radio" id="m" value="m" name="size">
+                                <input class="radio__input visually-hidden" type="radio" id="m" value="m" name="size">
                                 <label class="radio__label radio__label--size" for="m">
                                     <abbr class="radio__size" title="Medium size">M</abbr>
                                 </label>
                             </div>
                             <div class="radio">
-                                <input class="radio__input" type="radio" id="l" value="l" name="size">
+                                <input class="radio__input visually-hidden" type="radio" id="l" value="l" name="size">
                                 <label class="radio__label radio__label--size" for="l">
                                     <abbr class="radio__size" title="Large size">L</abbr>
                                 </label>
                             </div>
                             <div class="radio">
-                                <input class="radio__input" type="radio" id="xl" value="xl" name="size">
+                                <input class="radio__input visually-hidden" type="radio" id="xl" value="xl" name="size">
                                 <label class="radio__label radio__label--size" for="xl">
                                     <abbr class="radio__size" title="Extra large size">XL</abbr>
                                 </label>
                             </div>
                             <div class="radio">
-                                <input class="radio__input" type="radio" id="2xl" value="2xl" name="size" disabled>
+                                <input class="radio__input visually-hidden" type="radio" id="2xl" value="2xl" name="size" disabled>
                                 <label class="radio__label radio__label--size" for="2xl">
                                     <abbr class="radio__size" title="Extra extra large size">2XL</abbr>
                                 </label>
@@ -115,44 +115,38 @@
                         <legend class="fieldset__title">Color - <span class="form__color">White</span></legend>
                         <div class="fieldset__group">
                             <div class="radio">
-                                <input class="radio__input" type="radio" id="white" value="white" name="color" checked>
+                                <input class="radio__input visually-hidden" type="radio" id="white" value="white" name="color" checked>
                                 <label class="radio__label radio__label--color" for="white" data-title="White">
-                                    <span class="visually-hidden">White</span>
                                     <div class="radio__color radio__color--white"></div>
                                 </label>
                             </div>
                             <div class="radio">
-                                <input class="radio__input" type="radio" id="black" value="black" name="color">
+                                <input class="radio__input visually-hidden" type="radio" id="black" value="black" name="color">
                                 <label class="radio__label radio__label--color" for="black" data-title="Black">
-                                    <span class="visually-hidden">Black</span>
                                     <div class="radio__color radio__color--black"></div>
                                 </label>
                             </div>
                             <div class="radio">
-                                <input class="radio__input" type="radio" id="gray" value="gray" name="color">
+                                <input class="radio__input visually-hidden" type="radio" id="gray" value="gray" name="color">
                                 <label class="radio__label radio__label--color" for="gray" data-title="Gray">
-                                    <span class="visually-hidden">Gray</span>
                                     <div class="radio__color radio__color--gray"></div>
                                 </label>
                             </div>
                             <div class="radio">
-                                <input class="radio__input" type="radio" id="purple_latte" value="purple_latte" name="color">
+                                <input class="radio__input visually-hidden" type="radio" id="purple_latte" value="purple_latte" name="color">
                                 <label class="radio__label radio__label--color" for="purple_latte" data-title="Purple latte">
-                                    <span class="visually-hidden">Purple latte</span>
                                     <div class="radio__color radio__color--purple-latte"></div>
                                 </label>
                             </div>
                             <div class="radio">
-                                <input class="radio__input" type="radio" id="pink_latte" value="pink_latte" name="color" disabled>
+                                <input class="radio__input visually-hidden" type="radio" id="pink_latte" value="pink_latte" name="color" disabled>
                                 <label class="radio__label radio__label--color" for="pink_latte" data-title="Pink latte">
-                                    <span class="visually-hidden">Pink latte</span>
                                     <div class="radio__color radio__color--pink-latte"></div>
                                 </label>
                             </div>
                             <div class="radio">
-                                <input class="radio__input" type="radio" id="orange_latte" value="orange_latte" name="color" disabled>
+                                <input class="radio__input visually-hidden" type="radio" id="orange_latte" value="orange_latte" name="color" disabled>
                                 <label class="radio__label radio__label--color" for="orange_latte" data-title="Orange latte">
-                                    <span class="visually-hidden">Orange latte</span>
                                     <div class="radio__color radio__color--orange-latte"></div>
                                 </label>
                             </div>
@@ -212,7 +206,7 @@
                         <article class="card">
                             <img class="card__image" src="./media/photo-hoodie-purple.jpg" alt="Purple women hoodie photo">
                             <h3 class="card__heading heading">
-                                <a class="card__link" href="/purple_women_hoodie">Purple women hoodie</a>
+                                <a class="card__link link link--xl" href="/purple_women_hoodie">Purple women hoodie</a>
                             </h3>
                             <ul class="card__list" role="list">
                                 <li class="card__item">
@@ -239,7 +233,7 @@
                         <article class="card">
                             <img class="card__image" src="./media/photo-t-shirt-blue.jpg" alt="Blue men t-shirt photo">
                             <h3 class="card__heading heading">
-                                <a class="card__link" href="/blue_men_t-shirt">Blue men t-shirt</a>
+                                <a class="card__link link link--xl" href="/blue_men_t-shirt">Blue men t-shirt</a>
                             </h3>
                             <ul class="card__list" role="list">
                                 <li class="card__item">
@@ -269,7 +263,7 @@
                             </ul>
                             <img class="card__image" src="./media/photo-t-shirt-green.jpg" alt="Green women t-shirt photo">
                             <h3 class="card__heading heading">
-                                <a class="card__link" href="/green_women_t-shirt">Green women t-shirt</a>
+                                <a class="card__link link link--xl" href="/green_women_t-shirt">Green women t-shirt</a>
                             </h3>
                             <ul class="card__list" role="list">
                                 <li class="card__item">
@@ -296,7 +290,7 @@
                         <article class="card">
                             <img class="card__image" src="./media/photo-hoodie-black.jpg" alt="Black unisex hoodie photo">
                             <h3 class="card__heading heading">
-                                <a class="card__link" href="/black_unisex_hoodie">Black unisex hoodie</a>
+                                <a class="card__link link link--xl" href="/black_unisex_hoodie">Black unisex hoodie</a>
                             </h3>
                             <ul class="card__list" role="list">
                                 <li class="card__item">

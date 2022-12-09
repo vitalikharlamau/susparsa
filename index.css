@@ -6,6 +6,14 @@
     src: url(./fonts/AvenirNextRoundedStd-Reg.woff2) format('woff2');
 }
 
+@font-face {
+    font-family: 'Avenir Next Rounded Std';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 500;
+    src: url(./fonts/AvenirNextRoundedStd-Med.woff2) format('woff2');
+}
+
 :root {
     /*Palette*/
     --palette-mirage: #1A1F29;
@@ -68,7 +76,6 @@
 
 body {
     font-family: 'Avenir Next Rounded Std', sans-serif;
-    font-weight: 400;
     line-height: 1.25;
     color: var(--text-color-primary);
 }
@@ -89,6 +96,7 @@ abbr {
 }
 
 .container {
+    max-width: 84.5rem;
     width: 100%;
     margin: 0 auto;
     padding: 0 1.25rem;
@@ -209,10 +217,6 @@ abbr {
     border-bottom: 0.0625rem solid var(--border-color);
 }
 
-.header__container {
-    max-width: 84.5rem;
-}
-
 .header-navigation {
     display: flex;
     justify-content: space-between;
@@ -284,7 +288,7 @@ abbr {
 .product__container {
     max-width: 77.5rem;
     display: grid;
-    grid-template-columns: calc(100% - 34% - 4rem) 34%;
+    grid-template-columns: 60.6667% 34%;
     column-gap: 4rem;
     row-gap: 3.0625rem;
 }
@@ -366,10 +370,6 @@ abbr {
     gap: 0.75rem;
 }
 
-.radio__input {
-    display: none;
-}
-
 .radio__label {
     display: block;
     width: 2.5rem;
@@ -385,6 +385,10 @@ abbr {
 
 .radio__input:checked ~ .radio__label {
     border: 0.0625rem solid var(--border-color-input-checked);
+}
+
+.radio__input:checked ~ .radio__label > .radio__size {
+    font-weight: 500;
 }
 
 .radio__input:disabled ~ .radio__label {
@@ -655,8 +659,7 @@ abbr {
 }
 
 .card__link {
-    color: inherit;
-    text-decoration: none;
+    letter-spacing: 0;
 }
 
 .card__list {
