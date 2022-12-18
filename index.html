@@ -169,28 +169,26 @@
                     <p class="form__info">A unisex basic garment with a loose fit. Light and comfortable to your skin.</p>
                     <p class="form__info">Certification of cotton - <abbr class="form__info-abbr" title="Global organic textile standart">GOTS</abbr></p>
                 </form>
-                <div class="accordeon">
-                    <ul class="accordeon__list" role="list">
-                        <li class="accordeon__item">
-                            <button class="accordeon__button accordeon__button--active" type="button">
-                                <span class="accordeon__text">Sizing & Fit</span>
-                                <img class="accordeon__image" src="./media/symbol-minus.svg" alt="">
-                            </button>
-                            <p class="accordeon__content">Olga is 175cm, she is wearing a size S.</p>
+                <div class="accordion">
+                    <span class="visually-hidden" aria-hidden="true" id="accordion_heading">Additional product information</span>
+                    <ul class="accordion__list" role="list" aria-labelledby="accordion_heading">
+                        <li class="accordion__item">
+                            <button class="accordion__button" type="button" aria-expanded="false">Sizing & Fit</button>
+                            <div class="accordion__content" aria-hidden="true">
+                                <p class="accordion__text" >Olga is 175cm, she is wearing a size S.</p>
+                            </div>
                         </li>
-                        <li class="accordeon__item">
-                            <button class="accordeon__button" type="button">
-                                <span class="accordeon__text">Composition & Care</span>
-                                <img class="accordeon__image" src="./media/symbol-plus.svg" alt="">
-                            </button>
-                            <p class="accordeon__content accordeon__content--hide"></p>
+                        <li class="accordion__item">
+                            <button class="accordion__button" type="button" aria-expanded="false">Composition & Care</button>
+                            <div class="accordion__content" aria-hidden="true">
+                                <p class="accordion__text">100% cotton. Hand wash at 30 degrees Celsius.</p>
+                            </div>
                         </li>
-                        <li class="accordeon__item">
-                            <button class="accordeon__button">
-                                <span class="accordeon__text">Delivery & Returns</span>
-                                <img class="accordeon__image" src="./media/symbol-plus.svg" alt="">
-                            </button>
-                            <p class="accordeon__content accordeon__content--hide"></p>
+                        <li class="accordion__item">
+                            <button class="accordion__button" aria-expanded="false">Delivery & Returns</button>
+                            <div class="accordion__content" aria-hidden="true">
+                                <p class="accordion__text">Delivery by mail or courier. Return within 14 days.</p>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -385,5 +383,7 @@
             <p class="footer__company-info"><small class="footer__copyright">©</small> Susparsa <time class="footer__time" datetime="2021">2021</time></p>
         </div>
     </footer>
+
+    <script src="./index.js"></script>
 </body>
 </html>
