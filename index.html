@@ -8,9 +8,10 @@
     <title>Susparsa</title>
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
     <header class="header">
         <div class="header__container container">
-            <nav class="header-navigation">
+            <nav class="header-navigation" aria-label="Menu">
                 <ul class="header-navigation__list" role="list">
                     <li class="header-navigation__item">
                         <a class="header-navigation__link link link--xl" href="/women">Women</a>
@@ -27,7 +28,7 @@
                 </ul>
                 <a href="/home" class="header-navigation__logo">
                     <span class="visually-hidden">Homepage</span>
-                    <img class="header-navigation__image" src="./media/logo.svg" alt="Susparsa logo">
+                    <img class="header-navigation__image" src="./media/logo.svg" alt="" role="presentation">
                 </a>
                 <ul class="header-navigation__list" role="list">
                     <li class="header-navigation__item">
@@ -43,30 +44,30 @@
             </nav>
         </div>
     </header>
-    <main class="main">
-        <div class="breadcrumbs">
-            <div class="breadcrumbs__container container">
-                <nav class="breadcrumbs-navigation">
-                    <ol class="breadcrumbs-navigation__list" role="list">
-                        <li class="breadcrumbs-navigation__item">
-                            <a class="breadcrumbs-navigation__page link link--sm" href="/home">Home</a>
-                        </li>
-                        <li class="breadcrumbs-navigation__item">
-                            <a class="breadcrumbs-navigation__page link link--sm" href="/women">Women</a>
-                        </li>
-                        <li class="breadcrumbs-navigation__item">
-                            <span class="breadcrumbs-navigation__current"><span>White</span> unisex t-shirt</span>
-                        </li>
-                    </ol>
-                </nav>
-            </div>
+    <div class="breadcrumbs">
+        <div class="breadcrumbs__container container">
+            <nav class="breadcrumbs-navigation" aria-label="Breadcrumb">
+                <ol class="breadcrumbs-navigation__list" role="list">
+                    <li class="breadcrumbs-navigation__item">
+                        <a class="breadcrumbs-navigation__page link link--sm" href="/home">Home</a>
+                    </li>
+                    <li class="breadcrumbs-navigation__item">
+                        <a class="breadcrumbs-navigation__page link link--sm" href="/women">Women</a>
+                    </li>
+                    <li class="breadcrumbs-navigation__item">
+                        <span class="breadcrumbs-navigation__current" aria-current="page"><span>White</span> unisex t-shirt</span>
+                    </li>
+                </ol>
+            </nav>
         </div>
+    </div>
+    <main class="main" id="main">
         <section class="product">
             <div class="product__container container">
                 <img class="product__image" src="./media/photo-t-shirt-white.jpg" alt="White unisex t-shirt photo">
                 <form class="product__form form" action="/form">
                     <h1 class="form__heading heading heading--xl"><span class="form__color">White</span> unisex t-shirt</h1>
-                    <p class="form__price"><abbr class="form__price-currency" title="Swiss Franc">CHF</abbr> <span class="form__price-value">40</span></p>
+                    <p class="form__price"><span class="visually-hidden">Price</span><abbr class="form__price-currency" title="Swiss Franc">CHF</abbr> <span class="form__price-value">40</span></p>
                     <p class="form__tax"><small>Tax included</small></p>
                     <fieldset class="form__fildset fieldset">
                         <legend class="fieldset__title">Size</legend>
@@ -110,42 +111,42 @@
                         </div>
                     </fieldset>
                     <fieldset class="form__fildset fieldset">
-                        <legend class="fieldset__title">Color - <span class="form__color">White</span></legend>
+                        <legend class="fieldset__title">Color - <span class="form__color" aria-hidden="true">White</span></legend>
                         <div class="fieldset__group">
                             <div class="radio">
                                 <input class="radio__input visually-hidden" type="radio" id="white" value="white" name="color" checked>
                                 <label class="radio__label radio__label--color" for="white" data-title="White">
-                                    <div class="radio__color radio__color--white"></div>
+                                    <span class="radio__color radio__color--white"></span>
                                 </label>
                             </div>
                             <div class="radio">
                                 <input class="radio__input visually-hidden" type="radio" id="black" value="black" name="color">
                                 <label class="radio__label radio__label--color" for="black" data-title="Black">
-                                    <div class="radio__color radio__color--black"></div>
+                                    <span class="radio__color radio__color--black"></span>
                                 </label>
                             </div>
                             <div class="radio">
                                 <input class="radio__input visually-hidden" type="radio" id="gray" value="gray" name="color">
                                 <label class="radio__label radio__label--color" for="gray" data-title="Gray">
-                                    <div class="radio__color radio__color--gray"></div>
+                                    <span class="radio__color radio__color--gray"></span>
                                 </label>
                             </div>
                             <div class="radio">
                                 <input class="radio__input visually-hidden" type="radio" id="purple_latte" value="purple_latte" name="color">
                                 <label class="radio__label radio__label--color" for="purple_latte" data-title="Purple latte">
-                                    <div class="radio__color radio__color--purple-latte"></div>
+                                    <span class="radio__color radio__color--purple-latte"></span>
                                 </label>
                             </div>
                             <div class="radio">
                                 <input class="radio__input visually-hidden" type="radio" id="pink_latte" value="pink_latte" name="color" disabled>
                                 <label class="radio__label radio__label--color" for="pink_latte" data-title="Pink latte">
-                                    <div class="radio__color radio__color--pink-latte"></div>
+                                    <span class="radio__color radio__color--pink-latte"></span>
                                 </label>
                             </div>
                             <div class="radio">
                                 <input class="radio__input visually-hidden" type="radio" id="orange_latte" value="orange_latte" name="color" disabled>
                                 <label class="radio__label radio__label--color" for="orange_latte" data-title="Orange latte">
-                                    <div class="radio__color radio__color--orange-latte"></div>
+                                    <span class="radio__color radio__color--orange-latte"></span>
                                 </label>
                             </div>
                         </div>
@@ -156,11 +157,11 @@
                             <input class="quantity__input" type="number" min="1" max="999" step="1" value="1">
                             <button class="quantity__button quantity__button--increase" type="button">
                                 <span class="visually-hidden">Increase quantity</span>
-                                -
+                                <span class="quantity__button-symbol" aria-hidden="true">-</span>
                             </button>
                             <button class="quantity__button quantity__button--decrease" type="button">
                                 <span class="visually-hidden">Decrease quantity</span>
-                                +
+                                <span class="quantity__button-symbol" aria-hidden="true">+</span>
                             </button>
                         </div>
                     </fieldset>
@@ -173,20 +174,20 @@
                     <span class="visually-hidden" id="accordion_heading" aria-hidden="true">Additional product information</span>
                     <ul class="accordion__list" role="list" aria-labelledby="accordion_heading">
                         <li class="accordion__item">
-                            <button class="accordion__button" id="accordion_button1" type="button" aria-expanded="false" aria-controls="accordion_content1">Sizing & Fit</button>
-                            <div class="accordion__content" id="accordion_content1" aria-hidden="true" aria-labelledby="accordion_button1" role="region">
+                            <button class="accordion__button" id="accordion_button_1" type="button" aria-expanded="false" aria-controls="accordion_content_1">Sizing & Fit</button>
+                            <div class="accordion__content" id="accordion_content_1" aria-hidden="true" aria-labelledby="accordion_button_1" role="region">
                                 <p class="accordion__text">Olga is 175cm, she is wearing a size S.</p>
                             </div>
                         </li>
                         <li class="accordion__item">
-                            <button class="accordion__button" id="accordion_button2" type="button" aria-expanded="false" aria-controls="accordion_content2">Composition & Care</button>
-                            <div class="accordion__content" id="accordion_content2" aria-hidden="true" aria-labelledby="accordion_button2" role="region">
+                            <button class="accordion__button" id="accordion_button_2" type="button" aria-expanded="false" aria-controls="accordion_content_2">Composition & Care</button>
+                            <div class="accordion__content" id="accordion_content_2" aria-hidden="true" aria-labelledby="accordion_button_2" role="region">
                                 <p class="accordion__text">100% cotton. Hand wash at 30 degrees Celsius.</p>
                             </div>
                         </li>
                         <li class="accordion__item">
-                            <button class="accordion__button" id="accordion_button3" type="button" aria-expanded="false" aria-controls="accordion_content3">Delivery & Returns</button>
-                            <div class="accordion__content" id="accordion_content3" aria-hidden="true" aria-labelledby="accordion_button3" role="region">
+                            <button class="accordion__button" id="accordion_button_3" type="button" aria-expanded="false" aria-controls="accordion_content_3">Delivery & Returns</button>
+                            <div class="accordion__content" id="accordion_content_3" aria-hidden="true" aria-labelledby="accordion_button_3" role="region">
                                 <p class="accordion__text">Delivery by mail or courier. Return within 14 days.</p>
                             </div>
                         </li>
@@ -194,17 +195,19 @@
                 </div>
             </div>
         </section>
-        <section class="interesting">
+        <section class="interesting" aria-labelledby="interesting_heading">
+            <span class="visually-hidden" id="tags_heading" aria-hidden="true">Product tags</span>
+            <span class="visually-hidden" id="colors_heading" aria-hidden="true">Available colors</span>
             <div class="interesting__container container">
-                <h2 class="interesting__heading heading heading--xl">You may also like</h2>
+                <h2 class="interesting__heading heading heading--xl" id="interesting_heading">You may also like</h2>
                 <ul class="interesting__list" role="list">
                     <li class="interesting__item">
                         <article class="card">
-                            <img class="card__image" src="./media/photo-hoodie-purple.jpg" alt="Purple women hoodie photo">
+                            <img class="card__image" src="./media/photo-hoodie-purple.jpg" alt="" role="presentation">
                             <h3 class="card__heading heading">
                                 <a class="card__link link link--xl" href="/purple_women_hoodie">Purple women hoodie</a>
                             </h3>
-                            <ul class="card__list" role="list">
+                            <ul class="card__list" role="list" aria-labelledby="colors_heading">
                                 <li class="card__item">
                                     <span class="visually-hidden">Latte</span>
                                     <div class="card__color card__color--latte"></div>
@@ -222,16 +225,16 @@
                                     <div class="card__color card__color--purple-latte"></div>
                                 </li>
                             </ul>
-                            <p class="card__price"><abbr class="card__price-currency" title="Swiss Franc">CHF</abbr> <span class="card__price-value">60</span></p>
+                            <p class="card__price"><span class="visually-hidden">Price</span><abbr class="card__price-currency" title="Swiss Franc">CHF</abbr> <span class="card__price-value">60</span></p>
                         </article>
                     </li>
                     <li class="interesting__item">
                         <article class="card">
-                            <img class="card__image" src="./media/photo-t-shirt-blue.jpg" alt="Blue men t-shirt photo">
+                            <img class="card__image" src="./media/photo-t-shirt-blue.jpg" alt="" role="presentation">
                             <h3 class="card__heading heading">
                                 <a class="card__link link link--xl" href="/blue_men_t-shirt">Blue men t-shirt</a>
                             </h3>
-                            <ul class="card__list" role="list">
+                            <ul class="card__list" role="list" aria-labelledby="colors_heading">
                                 <li class="card__item">
                                     <span class="visually-hidden">Latte</span>
                                     <div class="card__color card__color--latte"></div>
@@ -249,19 +252,19 @@
                                     <div class="card__color card__color--purple-latte"></div>
                                 </li>
                             </ul>
-                            <p class="card__price"><abbr class="card__price-currency" title="Swiss Franc">CHF</abbr> <span class="card__price-value">20</span></p>
+                            <p class="card__price"><span class="visually-hidden">Price</span><abbr class="card__price-currency" title="Swiss Franc">CHF</abbr> <span class="card__price-value">20</span></p>
                         </article>
                     </li>
                     <li class="interesting__item">
                         <article class="card">
-                            <ul class="card__tags tags" role="list">
-                                <li class="tags__item tags__item--sold-out">Sold out</li>
-                            </ul>
-                            <img class="card__image" src="./media/photo-t-shirt-green.jpg" alt="Green women t-shirt photo">
+                            <img class="card__image" src="./media/photo-t-shirt-green.jpg" alt="" role="presentation">
                             <h3 class="card__heading heading">
                                 <a class="card__link link link--xl" href="/green_women_t-shirt">Green women t-shirt</a>
                             </h3>
-                            <ul class="card__list" role="list">
+                            <ul class="card__tags tags" role="list" aria-labelledby="tags_heading">
+                                <li class="tags__item tags__item--sold-out">Sold out</li>
+                            </ul>
+                            <ul class="card__list" role="list" aria-labelledby="colors_heading">
                                 <li class="card__item">
                                     <span class="visually-hidden">Latte</span>
                                     <div class="card__color card__color--latte"></div>
@@ -279,16 +282,16 @@
                                     <div class="card__color card__color--purple-latte"></div>
                                 </li>
                             </ul>
-                            <p class="card__price"><abbr class="card__price-currency" title="Swiss Franc">CHF</abbr> <span class="card__price-value">25</span></p>
+                            <p class="card__price"><span class="visually-hidden">Price</span><abbr class="card__price-currency" title="Swiss Franc">CHF</abbr> <span class="card__price-value">25</span></p>
                         </article>
                     </li>
                     <li class="interesting__item">
                         <article class="card">
-                            <img class="card__image" src="./media/photo-hoodie-black.jpg" alt="Black unisex hoodie photo">
+                            <img class="card__image" src="./media/photo-hoodie-black.jpg" alt="" role="presentation">
                             <h3 class="card__heading heading">
                                 <a class="card__link link link--xl" href="/black_unisex_hoodie">Black unisex hoodie</a>
                             </h3>
-                            <ul class="card__list" role="list">
+                            <ul class="card__list" role="list" aria-labelledby="colors_heading">
                                 <li class="card__item">
                                     <span class="visually-hidden">Latte</span>
                                     <div class="card__color card__color--latte"></div>
@@ -306,7 +309,7 @@
                                     <div class="card__color card__color--purple-latte"></div>
                                 </li>
                             </ul>
-                            <p class="card__price"><abbr class="card__price-currency" title="Swiss Franc">CHF</abbr> <span class="card__price-value">55</span></p>
+                            <p class="card__price"><span class="visually-hidden">Price</span><abbr class="card__price-currency" title="Swiss Franc">CHF</abbr> <span class="card__price-value">55</span></p>
                         </article>
                     </li>
                 </ul>
@@ -316,22 +319,25 @@
     <footer class="footer">
         <div class="footer__container container">
             <div class="footer__wrapper">
-                <section class="footer-info">
-                    <h2 class="footer-info__heading heading heading--md">About</h2>
+                <section class="footer-info" aria-labelledby="footer_info_heading">
+                    <span class="visually-hidden" id="social_networks_heading" aria-hidden="true">links to social networks</span>
+                    <h2 class="footer-info__heading heading heading--md" id="footer_info_heading">About</h2>
                     <address class="footer-info__contacts">
                         <p class="footer-info__name-compamy">Susparsa Store</p>
                         <p class="footer-info__address">Geneva, Switzerland</p>
-                        <ul class="footer-info__list" role="list">
+                        <ul class="footer-info__list" role="list" aria-labelledby="social_networks_heading">
                             <li class="footer-info__item">
                                 <a class="footer-info__link" href="https://www.facebook.com" target="_blank">
-                                    <svg class="footer-info__image" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <span class="visually-hidden">Facebook link</span>
+                                    <svg class="footer-info__image" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M16.0269 11.9817H13.4288V21.5H9.49245V11.9817H7.6203V8.63659H9.49245V6.47193C9.49245 4.92396 10.2278 2.5 13.4639 2.5L16.3797 2.5122V5.7592H14.2641C13.917 5.7592 13.4291 5.93258 13.4291 6.671V8.63971H16.3708L16.0269 11.9817Z" fill="#5E626B"/>
                                     </svg>
                                 </a>
                             </li>
                             <li class="footer-info__item">
                                 <a class="footer-info__link" href="https://www.instagram.com" target="_blank">
-                                    <svg class="footer-info__image" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <span class="visually-hidden">Instagram link</span>
+                                    <svg class="footer-info__image" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                                         <path d="M16.7071 2.5C19.3502 2.5 21.5 4.65013 21.5 7.29293V16.7071C21.5 19.3502 19.3502 21.5 16.7071 21.5H7.29293C4.65013 21.5 2.5 19.3502 2.5 16.7071V7.29293C2.5 4.65013 4.65013 2.5 7.29293 2.5H16.7071ZM16.7071 4.56779H7.29293C5.7903 4.56779 4.56779 5.7903 4.56779 7.29293V16.7071C4.56779 18.2097 5.7903 19.4326 7.29293 19.4326H16.7071C18.2097 19.4326 19.4326 18.21 19.4326 16.7071V7.29293C19.4326 5.7903 18.21 4.56779 16.7071 4.56779ZM12 7.10678C14.6984 7.10678 16.8936 9.30195 16.8936 12C16.8936 14.698 14.698 16.8936 12 16.8936C9.30195 16.8936 7.10678 14.6984 7.10678 12C7.10678 9.30195 9.30195 7.10678 12 7.10678ZM12 9.17456C10.4425 9.17456 9.17421 10.4421 9.17421 11.9996C9.17421 13.5579 10.4425 14.8258 12 14.8258C13.5582 14.8258 14.8254 13.5579 14.8254 11.9996C14.8254 10.4425 13.5579 9.17456 12 9.17456ZM17.0509 5.80297C17.6892 5.80297 18.2086 6.32238 18.2086 6.96073C18.2086 7.59909 17.6892 8.1185 17.0509 8.1185C16.4122 8.1185 15.8928 7.59909 15.8928 6.96073C15.8928 6.32238 16.4122 5.80297 17.0509 5.80297Z" fill="#5E626B"/>
                                     </svg>
                                 </a>
@@ -339,8 +345,8 @@
                         </ul>
                     </address>
                 </section>
-                <section class="footer-navigation">
-                    <h2 class="footer-navigation__heading heading heading--md">Company</h2>
+                <section class="footer-navigation" aria-labelledby="footer_navigation_heading_1">
+                    <h2 class="footer-navigation__heading heading heading--md" id="footer_navigation_heading_1">Company</h2>
                     <ul class="footer-navigation__list" role="list">
                         <li class="footer-navigation__item">
                             <a class="footer-navigation__link link link--lg" href="/women">Women</a>
@@ -359,8 +365,8 @@
                         </li>
                     </ul>
                 </section>
-                <section class="footer-navigation">
-                    <h2 class="footer-navigation__heading heading heading--md">Useful Links</h2>
+                <section class="footer-navigation" aria-labelledby="footer_navigation_heading_2">
+                    <h2 class="footer-navigation__heading heading heading--md" id="footer_navigation_heading_2">Useful Links</h2>
                     <ul class="footer-navigation__list" role="list">
                         <li class="footer-navigation__item">
                             <a class="footer-navigation__link link link--lg" href="/privacy_policy">Privacy Policy</a>

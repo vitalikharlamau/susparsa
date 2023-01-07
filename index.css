@@ -49,6 +49,7 @@
     --background-button-light: var(--palette-white);
     --background-button-dark: var(--palette-deep-koamaru);
     --background-quantity-active: var(--palette-concrete);
+    --background-skip-link: var(--palette-silver);
 
     /*Colors*/
     --color-white: var(--palette-white);
@@ -102,6 +103,25 @@ abbr {
     margin: 0 auto;
     padding: 0 1.25rem;
 }
+
+/*#region Skip-link*/
+
+.skip-link {
+    text-decoration: none;
+    color: var(--text-color-primary);
+    background-color: var(--background-skip-link);
+    position: absolute;
+    margin: 0;
+    transform: translateY(-100%);
+    transition: var(--time-transition-link) linear;
+}
+
+.skip-link:focus {
+    margin: 0.5rem;
+    transform: translateY(0%);
+}
+
+/*#endregion*/
 
 /*#region Link*/
 
@@ -260,13 +280,15 @@ abbr {
 }
 
 .breadcrumbs-navigation__item:not(:last-of-type)::after {
-    content: '/';
+    content: '';
+    display: block;
+    height: 0.75rem;
+    border-right: 0.0625rem solid var(--text-color-tertiary);
+    border-radius: 0.3125rem;
     position: absolute;
     left: calc(100% + 0.625rem);
     bottom: 0;
-    color: var(--text-color-tertiary);
-    font-size: 0.875rem;
-    line-height: 1.2143;
+    transform: rotate(20deg) translateY(-20%);
 }
 
 .breadcrumbs-navigation__current {
@@ -453,6 +475,7 @@ abbr {
 }
 
 .radio__color {
+    display: block;
     width: 100%;
     height: 100%;
     border: 0.03125rem solid var(--border-color);
