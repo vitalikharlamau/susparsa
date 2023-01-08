@@ -62,11 +62,11 @@
                 </nav>
             </div>
         </div>
-        <section class="product">
+        <section class="product" aria-labelledby="product_heading">
             <div class="product__container container">
                 <img class="product__image" src="./media/photo-t-shirt-white.jpg" alt="White unisex t-shirt photo">
                 <form class="product__form form" action="/form">
-                    <h1 class="form__heading heading heading--xl"><span class="form__color">White</span> unisex t-shirt</h1>
+                    <h1 class="form__heading heading heading--xl" id="product_heading"><span class="form__color">White</span> unisex t-shirt</h1>
                     <p class="form__price"><span class="visually-hidden">Price</span><abbr class="form__price-currency" title="Swiss Franc">CHF</abbr> <span class="form__price-value">40</span></p>
                     <p class="form__tax"><small>Tax included</small></p>
                     <fieldset class="form__fildset fieldset">
@@ -156,11 +156,11 @@
                         <div class="quantity__controls">
                             <input class="quantity__input" type="number" min="1" max="999" step="1" value="1">
                             <button class="quantity__button quantity__button--increase" type="button">
-                                <span class="visually-hidden">Increase quantity</span>
+                                <span class="visually-hidden">Decrease quantity</span>
                                 <span class="quantity__button-symbol" aria-hidden="true">-</span>
                             </button>
                             <button class="quantity__button quantity__button--decrease" type="button">
-                                <span class="visually-hidden">Decrease quantity</span>
+                                <span class="visually-hidden">Increase quantity</span>
                                 <span class="quantity__button-symbol" aria-hidden="true">+</span>
                             </button>
                         </div>
